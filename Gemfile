@@ -18,6 +18,10 @@ gem "thruster", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.2"
 
+gem "vite_rails", "~> 3.11"
+gem "foreman", "~> 0.90.0", group: :development
+
+gem "devise", "~> 5.0"
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "brakeman", require: false
@@ -36,6 +40,3 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-
-gem "vite_rails", "~> 3.11"
-gem "foreman", "~> 0.90.0", group: :development
